@@ -48,8 +48,12 @@ line-height: 1.6;
 a:hover {
 font-weight: 800;
 }
-/*header*/
 
+.section {
+display: flex;
+width: 100%;
+}
+/*header*/
 nav {
 display: flex;
 align-items: center;
@@ -82,24 +86,22 @@ padding-right: 50px;
 }
 
 /*banner*/
-
 .banner {
-display: flex;
-width: 100%;
 background-color: #cec6c2;
 }
 
 .banner img {
-overflow: hidden;
 width: 60%;
-height: auto;
+overflow: hidden;
 padding: 32px 24px;
+border: 1px solid black;
 }
 
 .banner .title {
 display: flex;
 justify-content: center;
 flex-direction: column;
+padding-left: 24px;
 }
 
 .banner .title p {
@@ -124,19 +126,18 @@ font-weight: 800;
 }
 
 /*information*/
-
-.information {
-display: flex;
-width: 100%;
-}
-
-.column.one{
-width: 60%;
+.section.information {
 padding: 32px 24px;
 }
 
-.column.one img{
+.column.one {
+width: 60%;
+
+}
+
+.column.one img {
 width: 100%;
+height: auto;
 overflow: hidden;
 }
 
@@ -146,9 +147,9 @@ padding-bottom: 24px;
 }
 
 .colum.one p {
-font-size: 1.5rem;
 line-height: 1.4rem;
 }
+
 .author {
 padding-top: 32px;
 font-weight: 500;
@@ -156,20 +157,22 @@ font-weight: 500;
 
 .column.two {
 width: 40%;
-padding: 32px 24px;
 }
 
 .column.two .container {
 display:flex;
 width: 100%;
-padding: 16px 16px;
-border: 1px solid black;
+padding: 0 16px 16px 16px;
+margin-left: 24px;
 }
 
-.information .column.two .container:first-child {
-padding-top: 0px;
+.column.two .container:nth-child(n+2) {
+padding-top: 16px;
 }
 
+.column.two .container:last-child {
+background-color: #cec6c2;
+}
 .container img {
 width: 35%;
 height: 35%;
@@ -178,7 +181,6 @@ padding-right: 16px;
 
 .container .description {
 width: 65%;
-margin: 0 auto;
 align-self: center;
 }
 
@@ -190,16 +192,11 @@ padding: 8px 0px;
 color: blue;
 }
 
-.lecture {
-background-color: #cec6c2;
-}
 /*courses*/
-
 .container2 {
 display: flex;
 background-color:#e8e6e5;
 justify-content: center;
-width: 100%;
 padding: 32px 72px;
 flex-wrap: wrap;
 }
@@ -235,15 +232,9 @@ padding: 8px 0px;
 }
 
 /*thesis*/
-
-.thesis {
-display: flex;
-}
-
 .container3 h2 {
 text-align: center;
 padding-top: 32px;
-border: 1px solid black;
 }
 
 video{
