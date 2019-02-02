@@ -94,7 +94,6 @@ background-color: #cec6c2;
 width: 60%;
 overflow: hidden;
 padding: 32px 24px;
-border: 1px solid black;
 }
 
 .banner .title {
@@ -132,7 +131,6 @@ padding: 32px 24px;
 
 .column.one {
 width: 60%;
-
 }
 
 .column.one img {
@@ -193,38 +191,33 @@ color: blue;
 }
 
 /*courses*/
-.container2 {
-display: flex;
+.section.courses {
 background-color:#e8e6e5;
 justify-content: center;
-padding: 32px 72px;
 flex-wrap: wrap;
+padding: 32px 40px 32px 40px;
 }
 
-.container2 h2  {
+.section.courses .header {
 width: 100%;
-padding-bottom: 32px
+padding-bottom: 32px;
+text-align: center;
 }
 
-.studies {
+.programme {
 display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-.courses {
-display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 max-width: 30%;
 height: auto;
 overflow: hidden;
-padding-bottom: 32px;
+margin: 0px 32px 32px 0px;
+background-color: white;
 }
 
 .content {
-padding: 16px 16px;
-background: white;
+padding-top: 16px;
 width: 100%;
+padding: 16px 0px 24px 16px;
 }
 
 .content h4 {
@@ -232,30 +225,36 @@ padding: 8px 0px;
 }
 
 /*thesis*/
-.container3 h2 {
+.section.thesis {
+flex-wrap: wrap;
+padding: 0px 0px 24px 24px;
+}
+.section.thesis h2{
 text-align: center;
 padding-top: 32px;
-}
-
-video{
 width: 100%;
 }
 
-.thesis .column.one h3{
+.section.thesis video {
+width: 100%;
+}
+
+.section.thesis .column.one h3{
 padding: 24px 0px 8px 0px;
 }
 
-.thesis .column.two .container.showcase {
+.section.thesis .column.two:first-child {
 background-color: #cec6c2;
 }
 
 /*footer*/
 footer {
-display: inline;
-border-top: 0.50px solid #cec6c2;
+display: flex;
+border-top: 1px solid #cec6c2;
 padding: 16px 24px;
+width: 100%; 
 }
 
-ul {
-float: right;
+footer p {
+width: 85%;
 }
