@@ -61,6 +61,8 @@ height: 64px;
 padding-right: 16px;
 width: 100%;
 padding: 0px 24px;
+position:fixed;
+background-color: white;
 }
 
 nav p {
@@ -85,25 +87,47 @@ ul li:last-child {
 padding-right: 50px;
 }
 
+.mobile.menu {
+display: none;
+}
+
+@media only screen and (max-width: 768px){
+#menu {
+display: none;
+}
+nav {
+padding: 0px;
+}
+.mobile.menu {
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 0px 16px; 
+}
+nav .logo {
+display: none;
+}
+}
+
 /*banner*/
-.banner {
+.section.banner {
 background-color: #cec6c2;
 }
 
-.banner img {
+.section.banner img {
 width: 60%;
-overflow: hidden;
 padding: 32px 24px;
 }
 
-.banner .title {
+.section.banner .title {
 display: flex;
 justify-content: center;
 flex-direction: column;
 padding-left: 24px;
+width: 40%;
 }
 
-.banner .title p {
+.section.banner .title p {
 font-size: 1.5rem;
 padding-bottom: 3rem;
 font-weight: bold;
@@ -115,7 +139,7 @@ font-size: 1.5rem;
 background-color: #57585b;
 color: white;
 padding: 8px;
-width: 100%;
+width: 75%;
 text-align: center;
 text-decoration: none;
 }
@@ -124,6 +148,29 @@ text-decoration: none;
 font-weight: 800;
 }
 
+/*mobile version*/
+@media only screen and (max-width: 768px){
+.section.banner {
+flex-direction: column;
+width: 100%;
+}
+.section.banner img {
+width: 100%;
+padding: 0px;
+}
+.section.banner .banner.title {
+width: 100%;
+padding: 32px 0px 32px 16px;
+overflow: hidden;
+}
+.section.banner .banner.title p {
+padding-top: 32px;
+padding-bottom: 24px;
+}
+.banner.title .button {
+width: 90%;
+}
+}
 /*information*/
 .section.information {
 padding: 32px 24px;
@@ -177,6 +224,10 @@ height: 35%;
 padding-right: 16px;
 }
 
+.mobile.image {
+display: none;
+}
+
 .container .description {
 width: 65%;
 align-self: center;
@@ -190,6 +241,37 @@ padding: 8px 0px;
 color: blue;
 }
 
+/*mobile version */
+@media only screen and (max-width: 768px){
+.section.information .column.one {
+display: none;
+}
+.section.information .column.two {
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+.section.information .column.two .container {
+padding: 0px;
+margin: 0px;
+flex-direction: column;
+width: 100%;
+}
+.section.information .column.two img {
+display: none;
+}
+.section.information .column.two .mobile.image {
+display: block;
+width: auto;
+}
+.section.information .column.two .container .description{
+width: 100%;
+padding: 32px 0px 64px 0px;
+}
+.section.information .column.two .container:last-child {
+background-color: white;
+}
+}
 /*courses*/
 .section.courses {
 background-color:#e8e6e5;
@@ -210,8 +292,8 @@ flex-direction: column;
 max-width: 30%;
 height: auto;
 overflow: hidden;
-margin: 0px 32px 32px 0px;
 background-color: white;
+margin: 0px 32px 32px 0px;
 }
 
 .content {
@@ -224,6 +306,30 @@ padding: 16px 0px 24px 16px;
 padding: 8px 0px;
 }
 
+/*mobile version */
+@media only screen and (max-width: 768px){
+.section.courses {
+background-color: white;
+flex-direction: column;
+padding: 0px;
+width: 100%;
+}
+.section.courses .programme .image {
+display: none;
+}
+.section.courses .programme {
+max-width: 100%;
+margin: 0px;
+padding-left: 16px;
+}
+.section.courses .programme .content h4, p {
+display: none;
+}
+.programme .content h3 {
+background-color: #e8e6e5;
+padding: 16px 0px 24px 16px;
+}
+}
 /*thesis*/
 .section.thesis {
 flex-wrap: wrap;
@@ -232,6 +338,7 @@ padding: 0px 0px 24px 24px;
 .section.thesis h2{
 text-align: center;
 padding-top: 32px;
+padding-bottom: 32px;
 width: 100%;
 }
 
@@ -243,18 +350,54 @@ width: 100%;
 padding: 24px 0px 8px 0px;
 }
 
-.section.thesis .column.two:first-child {
+.section.thesis .column.two .container.showcase {
 background-color: #cec6c2;
+padding-top: 16px;
 }
 
+.section.thesis .column.two .container.research.study {
+background-color: white;
+}
+
+
+/*mobile version */
+@media only screen and (max-width: 768px){
+.section.thesis {
+padding: 0px;
+}
+.section.thesis .column.two {
+display: none;
+}
+.section.thesis .column.one h3 {
+display: none;
+}
+.section.thesis .column.one {
+width: 100%;
+padding-bottom: 24px;
+}
+}
 /*footer*/
 footer {
 display: flex;
 border-top: 1px solid #cec6c2;
 padding: 16px 24px;
-width: 100%; 
+width: 100%;
 }
 
 footer p {
 width: 85%;
+}
+
+/*mobile version */
+@media only screen and (max-width: 768px){
+footer {
+border: none;
+}
+footer ul{
+display: none;
+}
+footer p{
+display: block;
+width: 100%;
+}
 }
