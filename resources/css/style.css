@@ -90,19 +90,23 @@ padding-right: 50px;
 display: none;
 }
 
+/*mobile version*/
 @media only screen and (max-width: 768px){
 #menu {
 display: none;
 }
+
 nav {
 padding: 0px;
 }
+
 .mobile.menu {
 display: flex;
 width: 100%;
 justify-content: space-between;
 padding: 0px 16px;
 }
+
 nav .logo {
 display: none;
 }
@@ -155,75 +159,94 @@ flex-direction: column;
 width: auto;
 padding: 0px;
 }
+
 .section.banner img {
 width: 100%;
 }
+
 .section.banner .banner.title {
 width: auto;
 padding: 32px 0px 32px 16px;
 overflow: hidden;
 }
+
 .section.banner .banner.title p {
 padding-top: 32px;
 padding-bottom: 24px;
 }
+
 .banner.title .button {
 width: 94%;
 }
 }
+
 /*information*/
 .section.information {
 padding: 32px 24px;
 }
+
 .column.one {
 width: 60%;
 }
+
 .column.one img {
 width: 100%;
 height: auto;
 overflow: hidden;
 }
+
 .column.one h2 {
 padding-top: 32px;
 padding-bottom: 24px;
 }
+
 .colum.one p {
 line-height: 1.4rem;
 }
+
 .author {
 padding-top: 32px;
 font-weight: 500;
 }
+
 .column.two {
 width: 40%;
 }
+
 .column.two .container {
 display:flex;
 width: auto;
 padding: 0 16px 16px 16px;
 margin-left: 24px;
 }
+
 .column.two .container:nth-child(n+2) {
 padding-top: 16px;
 }
+
 .column.two .container:last-child {
 background-color: #f4e542;
 }
+
 .container img {
 width: 35%;
 height: 35%;
 padding-right: 16px;
 }
+
 .mobile.image {
 display: none;
 }
+
 .container .description {
 width: 65%;
 align-self: center;
 }
+
 .description p {
 padding: 8px 0px;
 }
+
 .description a:visited {
 color: blue;
 }
@@ -233,33 +256,40 @@ color: blue;
 .section.information .column.one {
 display: none;
 }
+
 .section.information .column.two {
 width: 100%;
 margin: 0px;
 padding: 0px;
 }
+
 .section.information .column.two .container {
 padding: 0px;
 margin: 0px;
 flex-direction: column;
 width: 100%;
 }
+
 .section.information .column.two img {
 display: none;
 }
+
 .section.information .column.two .mobile.image {
 display: block;
 width: 100%;
 overflow: hidden;
 }
+
 .section.information .column.two .container .description{
 width: 100%;
 padding: 32px 0px 64px 0px;
 }
+
 .section.information .column.two .container:last-child {
 background-color: white;
 }
 }
+
 /*courses*/
 .section.courses {
 background-color:#cec6c2;
@@ -274,7 +304,7 @@ padding-bottom: 32px;
 text-align: center;
 }
 
-.programme {
+.section.courses .programme {
 display: flex;
 flex-direction: column;
 max-width: 30%;
@@ -284,13 +314,13 @@ background-color: white;
 margin: 0px 32px 32px 0px;
 }
 
-.content {
+.section.courses .content {
 padding-top: 16px;
 width: auto;
 padding: 16px 0px 24px 16px;
 }
 
-.content h4 {
+.section.courses .content h4 {
 padding: 8px 0px;
 }
 
@@ -302,28 +332,33 @@ flex-direction: column;
 padding: 0px;
 width: 100%;
 }
+
 .section.courses .programme .image {
 display: none;
 }
+
 .section.courses .programme {
 max-width: 94%;
 margin: 0px;
 padding-left: 0px 16px 0px 16px;
-
 }
+
 .section.courses .programme .content h4, p {
 display: none;
 }
+
 .programme .content h3 {
-background-color: #f2eca9;
+background-color: #f4e542;;
 padding: 16px 0px 24px 16px;
 }
 }
+
 /*thesis*/
 .section.thesis {
 flex-wrap: wrap;
 padding: 0px 0px 24px 24px;
 }
+
 .section.thesis h2{
 text-align: center;
 padding-top: 32px;
@@ -348,23 +383,26 @@ padding-top: 16px;
 background-color: white;
 }
 
-
 /*mobile version */
 @media only screen and (max-width: 768px){
 .section.thesis {
 padding: 0px;
 }
+
 .section.thesis .column.two {
 display: none;
 }
+
 .section.thesis .column.one h3 {
 display: none;
 }
+
 .section.thesis .column.one {
 width: auto;
 padding-bottom: 24px;
 }
 }
+
 /*footer*/
 footer {
 display: flex;
@@ -382,9 +420,11 @@ width: 85%;
 footer {
 border: none;
 }
+
 footer ul{
 display: none;
 }
+
 footer p{
 display: block;
 width: 100%;
