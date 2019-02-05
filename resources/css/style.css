@@ -159,22 +159,18 @@ flex-direction: column;
 width: auto;
 padding: 0px;
 }
-
 .section.banner img {
 width: 100%;
 }
-
 .section.banner .banner.title {
 width: auto;
 padding: 32px 0px 32px 16px;
 overflow: hidden;
 }
-
 .section.banner .banner.title p {
 padding-top: 32px;
 padding-bottom: 24px;
 }
-
 .banner.title .button {
 width: 94%;
 }
@@ -256,35 +252,29 @@ color: blue;
 .section.information .column.one {
 display: none;
 }
-
 .section.information .column.two {
 width: 100%;
 margin: 0px;
 padding: 0px;
 }
-
 .section.information .column.two .container {
 padding: 0px;
 margin: 0px;
 flex-direction: column;
 width: 100%;
 }
-
 .section.information .column.two img {
 display: none;
 }
-
 .section.information .column.two .mobile.image {
 display: block;
 width: 100%;
 overflow: hidden;
 }
-
 .section.information .column.two .container .description{
 width: 100%;
 padding: 32px 0px 64px 0px;
 }
-
 .section.information .column.two .container:last-child {
 background-color: white;
 }
@@ -298,7 +288,7 @@ flex-wrap: wrap;
 padding: 32px 40px 32px 40px;
 }
 
-.section.courses .header {
+.header {
 width: 100%;
 padding-bottom: 32px;
 text-align: center;
@@ -335,17 +325,14 @@ flex-direction: column;
 padding: 0px;
 width: 100%;
 }
-
 .section.courses .programme .image {
 display: none;
 }
-
 .section.courses .programme {
 max-width: 94%;
 margin: 0px;
 padding-left: 0px 16px 0px 16px;
 }
-
 .section.courses .programme .content h3, h4, p {
 display: none;
 }
@@ -355,18 +342,15 @@ background-color: #f4e542;
 padding: 16px 0px 16px 16px;
 font-size: 2rem;
 }
-
+}
 /*thesis*/
 .section.thesis {
 flex-wrap: wrap;
 padding: 0px 0px 24px 24px;
 }
 
-.section.thesis h2{
-text-align: center;
+.section.thesis .header{
 padding-top: 32px;
-padding-bottom: 32px;
-width: 100%;
 }
 
 .section.thesis video {
@@ -391,21 +375,17 @@ background-color: white;
 .section.thesis {
 padding: 0px;
 }
-
 .section.thesis .column.two {
 display: none;
 }
-
 .section.thesis .column.one h3 {
 display: none;
 }
-
 .section.thesis .column.one {
 width: auto;
 padding-bottom: 24px;
 }
 }
-
 /*footer*/
 footer {
 display: flex;
@@ -423,11 +403,9 @@ width: 85%;
 footer {
 border: none;
 }
-
 footer ul{
 display: none;
 }
-
 footer p{
 display: block;
 width: 100%;
